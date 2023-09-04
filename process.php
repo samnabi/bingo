@@ -28,7 +28,7 @@
 <body>
 
 <?php
-
+$bingo_words = '';
 foreach($_POST as $bingo_word){
 	$bingo_words .= $bingo_word.' ';
 }
@@ -44,8 +44,6 @@ foreach($_POST as $bingo_word){
 <a class="big" href="index.php">Click here to play again</a>
 
 <small><p><em>This is a silly little game by <a href="http://samnabi.com">Sam Nabi</a>. I hope you like it!</p></em></small>
-
-<?php include('../analytics.php'); ?>
 
 </body>
 </html>

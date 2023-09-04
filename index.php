@@ -104,6 +104,7 @@ shuffle($words);
 <form action="process.php" method="POST">
 
 	<?php 
+	$i = 0;
 	foreach( $words as $word){
 		$i++;
 		if ($i <= 9) {
@@ -146,9 +147,6 @@ shuffle($words);
 	<input class="submit" type="submit" value="BINGO!" />
 
 </form>
-
-<?php include('../analytics.php'); ?>
-
 
 </body>
 </html>
